@@ -127,4 +127,14 @@ TOy STore - bu bolalar uchun sifatli o'yinchoqlarni taklif qiluvchi onlayn-do'ko
 - **Sana**: 2025
 
 ## Litsenziya
+
 Ushbu loyiha ochiq manba hisoblanadi. Har qanday o'zgartirishlar kiritish mumkin.
+
+
+## Arhitiktura 
+toy-store/
+├── index.html      # 700+ qator (barcha HTML)
+├── style.css       # 1200+ qator (barcha CSS)
+├── script.js       # 1000+ qator (barcha JavaScript)
+├── products.json   # Mahsulotlar
+└── README.md       # Dokumentatsiya
