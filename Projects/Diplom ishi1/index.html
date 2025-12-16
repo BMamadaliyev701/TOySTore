@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOy STore</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome – ikonka uchun -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="./script.js" defer></script>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/mrC7Bh2G/Bez-nazvania.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- ====================== HEADER ====================== -->
+    <header class="topbar">
+      <div class="container">
+        <div class="topbar__inner">
+          <a href="javascript:void(0)" class="logo scroll-to-top">
+            <div class="logo-3d">
+              <img
+                src="https://i.postimg.cc/mrC7Bh2G/Bez-nazvania.png"
+                alt="logo"
+                class="logo-dark"
+              />
+              <img
+                src="https://i.postimg.cc/mrC7Bh2G/Bez-nazvania.png"
+                alt="logo"
+                class="logo-light"
+              />
+            </div>
+            <span class="logo-text">TOy STore</span>
+          </a>
+
+          <!-- QIDIRUV MAYDONI -->
+          <div class="search">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="O'yinchoqlar nomi va narxi..."
+            />
+          </div>
+
+          <!-- TUGMALAR: Tema, Savat -->
+          <div class="actions">
+            <button id="theme-toggle" class="action">
+              <i class="fa-solid fa-sun"></i> <i class="fa-solid fa-moon"></i>
+            </button>
+            <button
+              id="cart-btn"
+              class="action"
+              data-modal-target="#cart-modal"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count" class="cart-count">0</span>
+            </button>
+          </div>
+
+          <!-- Foydalanuvchi ma'lumotlari (kirgandan keyin) -->
+          <div class="user-info" style="display: none">
+            <span id="user-display-email" class="user-text"></span>
+            <button id="logout-btn" class="btn btn--secondary">Chiqish</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="secondary-navbar" id="sidebar-menu">
+      <div class="navbar-content">
+        <ul class="quick-links-list">
+          <li>
+            <a href="#banner" class="nav-link scroll-to-top">Bosh sahifa</a>
+          </li>
+          <li>
+            <a href="#catalog-anchor" class="nav-link scroll-to-products"
+              >Katalog</a
+            >
+          </li>
+          <li class="separator">|</li>
+          <li><a href="#filterOptions" class="nav-link">Yangiliklar</a></li>
+          <li><a href="#filterOptions" class="nav-link">Xit savdo</a></li>
+          <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="#footer" class="nav-link">Kontaktlar</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ====================== BANNER ====================== -->
+    <section class="banner" id="banner">
+      <div class="container">
+        <div class="banner-content">
+          <h1 class="banner-title">Eng sara O'yinchoqlar siz uchun</h1>
+          <p class="banner-description">Siz hohlgan o'yinchoqlar</p>
+          <a href="#filterContainer" class="btn btn--primary scroll-to-products"
+            >Katalogni ko'rish</a
+          >
+        </div>
+        <div class="banner-image">
+          <img
+            src="https://i.postimg.cc/hPdb4CGJ/unnamed.jpg"
+            alt="O'yinchoqlar banneri"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== MAIN CONTENT ====================== -->
+    <main>
+      <section class="container">
+        <!-- FILTR TUGMALARI -->
+        <div class="filter-container" id="filterContainer">
+          <div class="filter-options" id="filterOptions">
+            <div class="filter-item active" data-filter="all">
+              Barcha o'yinchoqlar
+            </div>
+            <div class="filter-item" data-filter="Konstruktor">
+              Konstruktorlar
+            </div>
+            <div class="filter-item" data-filter="Qo'g'irchoqlar">
+              Qo'g'irchoqlar
+            </div>
+            <div class="filter-item" data-filter="Yumshoq o'yinchoqlar">
+              Yumshoq o'yinchoqlar
+            </div>
+            <div class="filter-item" data-filter="Mashinalar">Mashinalar</div>
+            <div class="filter-item" data-filter="Ta'limiy">Ta'limiy</div>
+            <div class="filter-item" data-filter="Jumboqlar">Jumboqlar</div>
+            <div class="filter-item" data-filter="Figuralar">Figuralar</div>
+          </div>
+        </div>
+
+        <!-- YANGI: Katalog tugmasi uchun scroll nuqtasi (filtr ostidan boshlash uchun) -->
+        <div id="catalog-anchor"></div>
+
+        <!-- O'YINCHOQLAR RO'YXATI -->
+        <div class="products" id="toy-list"></div>
+      </section>
+
+      <section id="about" class="about-us-section">
+        <h2 class="section-title">Biz haqimizda</h2>
+
+        <div class="about-content">
+          <p>
+            Smarttoys rivojlantiruvchi o'yinchoqlarni onlayn-do'koni bolalarda
+            ijodiy fikrlashni, sabab-oqibat munosabatlarini va tasavvurni
+            rivojlantiruvchi o'yinchoqlarni taklif qiladi. Rivojlantiradigan
+            o'yinchoqlar tasavvurni, fantaziyani, fikrlashni va nutqni
+            rivojlantirish uchun optimal echimdir. Ular qat'iyat va sabr-toqatni
+            rivojlantirish bilan birga mantiq va barmoq motorikasini o'rgatadi.
+            Bolalar uchun rivojlantiradigan o'yinchoqlar - bu bolalarning har
+            qanday ko'nikmalarini oshirishga yordam beradigan narsalar. Bu rolni
+            birinchi bo'lib bajaradigan hayvonlar va turli materiallardan
+            yasalgan geometrik shakllar: to'qimachilik, plastmassa, yog'och.
+            Bola ularni his qilish orqali narsalarni rangi, shakli, o'lchami
+            bilan farqlashni o'rganadi.
+          </p>
+        </div>
+      </section>
+
+      <section class="brands-section">
+        <h2 class="section-title">Brendlar</h2>
+        <div class="brands-grid">
+          <a
+            href="/brand/logo"
+            class="brand-item"
+            aria-label="Mini Auto brendi"
+          >
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="Mini Auto logotipi"
+            />
+          </a>
+
+          <a
+            href="/brand/hb-toys"
+            class="brand-item"
+            aria-label="HB Toys brendi"
+          >
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="HB Toys logotipi"
+            />
+          </a>
+
+          <a href="/brand/yiga" class="brand-item" aria-label="Yiga brendi">
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="Yiga logotipi"
+            />
+          </a>
+
+          <a
+            href="/brand/mould-king"
+            class="brand-item"
+            aria-label="Mould King brendi"
+          >
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="Mould King logotipi"
+            />
+          </a>
+
+          <a
+            href="/brand/sembo-block"
+            class="brand-item"
+            aria-label="Sembo Block brendi"
+          >
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="Sembo Block logotipi"
+            />
+          </a>
+
+          <a href="/brand/hola" class="brand-item" aria-label="Hola brendi">
+            <img
+              src="https://i.postimg.cc/B62z7Tr1/walt2.jpg"
+              alt="Hola logotipi"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-col contact-info">
+            <h4>Savollaringiz bormi?</h4>
+            <p><a href="tel:+998997943151">+998 (94) 849-80-05</a></p>
+            <p>
+              <a href="mailto:smarttoys.uz@gmail.com"
+                >Pochta: TOySTore.uz@gmail.com</a
+              >
+            </p>
+
+            <div class="social-links">
+              <a href="#" aria-label="Telegram" class="social-icon telegram">
+                <i class="fa-brands fa-telegram-plane"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="social-icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="Facebook" class="social-icon facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col payment-methods">
+            <h4>To'lov usullari</h4>
+            <div class="payment-icons">
+              <div class="payment-logo payme">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Payme</span>
+              </div>
+              <div class="payment-logo uzumbank">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Uzum Bank</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col categories">
+            <h4>Toifalar</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#filterContainer" class="scroll-to-products"
+                  >Barcha o'yinchoqlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filterContainer"
+                  class="filter-link"
+                  data-filter="Konstruktor"
+                  >Konstruktorlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filterContainer"
+                  class="filter-link"
+                  data-filter="Qo'g'irchoqlar"
+                  >Qo'g'irchoqlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filterContainer"
+                  class="filter-link"
+                  data-filter="Yumshoq o'yinchoqlar"
+                  >Yumshoq o'yinchoqlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filterContainer"
+                  class="filter-link"
+                  data-filter="Mashinalar"
+                  >Mashinalar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#filterContainer"
+                  class="filter-link"
+                  data-filter="Ta'limiy"
+                  >Ta'limiy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col navigation">
+            <h4>Navigatsiya</h4>
+            <ul class="footer-links">
+              <li><a href="#banner" class="scroll-to-top">Bosh sahifa</a></li>
+              <li>
+                <a href="#catalog-anchor" class="scroll-to-products">Katalog</a>
+              </li>
+              <li><a href="#about">Biz haqimizda</a></li>
+              <li><a href="#footer">Kontaktlar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-logo-and-copyright">
+          <p>&copy;2025 «TOy STore». Barcha huquqlar himoyalangan.</p>
+        </div>
+        <p class="site-url">www.TOySTore.uz</p>
+        <p class="developer-info">
+          <i class="fa-solid fa-bolt"></i> B.Mamadaliyev tomonidan ishlab
+          chiqilgan
+        </p>
+      </div>
+    </footer>
+
+    <!-- ====================== MODALLAR ====================== -->
+    <!--  Savat, Buyurtma, Ma'lumot -->
+    <div id="login-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Tizimga kirish</h3>
+        <form id="login-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Parol" required />
+          <button type="submit" class="btn btn--primary">Kirish</button>
+          <p id="login-message" class="error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <div id="register-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Ro'yxatdan o'tish</h3>
+        <form id="register-form">
+          <input type="text" placeholder="Ismingiz" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Parol" required />
+          <input type="password" placeholder="Parolni takrorlash" required />
+          <button type="submit" class="btn btn--primary">
+            Ro'yxatdan o'tish
+          </button>
+          <p id="register-message" class="error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <div id="cart-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Savat</h3>
+        <div class="cart-items-list" id="cart-items-list"></div>
+        <div class="cart-summary">
+          Jami: <span id="cart-total-price">0 so'm</span>
+        </div>
+        <button
+          id="order-all-btn"
+          class="btn btn--primary"
+          data-modal-target="#order-modal"
+          style="display: none; margin-top: 15px"
+        >
+          Buyurtma berish
+        </button>
+      </div>
+    </div>
+
+    <div id="order-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Buyurtmani rasmiylashtirish</h3>
+
+        <!-- To'lov usullari -->
+        <div class="payment-options">
+          <h4>To'lov usulini tanlang:</h4>
+          <div class="payment-methods-selector">
+            <label class="payment-method-option">
+              <input type="radio" name="payment-method" value="payme" checked />
+              <div class="payment-method-content">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Payme</span>
+              </div>
+            </label>
+            <label class="payment-method-option">
+              <input type="radio" name="payment-method" value="uzumbank" />
+              <div class="payment-method-content">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Uzum Bank</span>
+              </div>
+            </label>
+            <label class="payment-method-option">
+              <input type="radio" name="payment-method" value="naqd" />
+              <div class="payment-method-content">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Naqd pul</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <form id="order-form">
+          <div
+            style="
+              background: var(--panel-2);
+              padding: 10px;
+              border-radius: 8px;
+              margin-bottom: 1rem;
+            "
+          >
+            <p
+              id="order-toy-info"
+              class="muted"
+              style="white-space: pre-wrap; font-size: 14px"
+            ></p>
+          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="To'liq ismingiz va Familyangiz"
+            required
+          />
+          <input
+            type="text"
+            name="phone"
+            id="order-phone"
+            placeholder="Telefon raqami (+998YY YYY YY YY)"
+            required
+            value="+998"
+            maxlength="13"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="address"
+            placeholder="Manzil (ko'cha, uy raqami)"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email manzilingiz"
+            required
+          />
+          <textarea
+            name="note"
+            placeholder="Eslatma/Qo'shimcha ma'lumot (ixtiyoriy)"
+            rows="3"
+          ></textarea>
+          <button type="submit" class="btn btn--primary">
+            Buyurtmani tasdiqlash
+          </button>
+          <p id="order-message" class="error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- YANGI: O'yinchoq haqida batafsil ma'lumot -->
+    <div id="toy-detail-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="toy-detail">
+          <img id="detail-image" src="" alt="" class="toy-detail__img" />
+          <div class="toy-detail__info">
+            <h3 id="detail-title"></h3>
+            <p id="detail-brand" class="muted"></p>
+            <p id="detail-category" class="muted"></p>
+            <p id="detail-price" class="toy-detail__price"></p>
+            <div class="toy-details" id="toy-details-list"></div>
+            <p id="detail-description" class="toy-detail__desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST XABARLAR - IKKALA JOYDA HAM -->
+    <div class="toast-container" id="toast-container"></div>
+    <div class="toast-container-bottom" id="toast-container-bottom"></div>
+
+    <!-- YUKLANISH ANIMATSIYASI -->
+    <!-- <div id="loading-overlays" class="loading-overlay">
+      <div class="spinner"></div> -->
+  </body>
+</html>
