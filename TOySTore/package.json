@@ -1,0 +1,30 @@
+{
+  "name": "toystore",
+  "version": "1.0.0",
+  "description": "Test diplom ishi - E-commerce website",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "e-commerce",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0"
+  }
+}

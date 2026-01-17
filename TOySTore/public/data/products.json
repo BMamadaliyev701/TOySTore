@@ -1,0 +1,187 @@
+[
+    {
+        "id": 1,
+        "title": "LEGO Kosmik Kema",
+        "brand": "LEGO Group",
+        "price": 450000,
+        "originalPrice": 550000,
+        "category": "Konstruktor",
+        "image": "https://i.postimg.cc/DfHJJVtS/2a28666259ae431c8c80510db60319b8.webp",
+        "images": [
+            "https://i.postimg.cc/DfHJJVtS/2a28666259ae431c8c80510db60319b8.webp",
+            "https://i.postimg.cc/DfHJJVtS/2a28666259ae431c8c80510db60319b8.webp",
+            "https://i.postimg.cc/DfHJJVtS/2a28666259ae431c8c80510db60319b8.webp",
+            "https://i.postimg.cc/DfHJJVtS/2a28666259ae431c8c80510db60319b8.webp"
+        ],
+        "description": "7 yoshdan katta bolalar uchun mo'ljallangan, 1200 qismdan iborat kosmik kema konstruktori. Fantaziya va mayda motorikani rivojlantiradi.",
+        "isNew": false,
+        "isHit": true,
+        "discount": 18,
+        "dateAdded": "2025-11-01T10:00:00Z",
+        "soldCount": 150
+    },
+    {
+        "id": 2,
+        "title": "Barbi Qo'g'irchog'i - Malika",
+        "brand": "Mattel",
+        "price": 180000,
+        "originalPrice": 220000,
+        "category": "Qo'g'irchoqlar",
+        "image": "https://i.postimg.cc/BbB6tvk1/d2unnkj4eu2hs07s1u20.jpg",
+        "images": [
+            "https://i.postimg.cc/BbB6tvk1/d2unnkj4eu2hs07s1u20.jpg",
+            "https://i.postimg.cc/BbB6tvk1/d2unnkj4eu2hs07s1u20.jpg",
+            "https://i.postimg.cc/BbB6tvk1/d2unnkj4eu2hs07s1u20.jpg",
+            "https://i.postimg.cc/BbB6tvk1/d2unnkj4eu2hs07s1u20.jpg"
+        ],
+        "description": "Hashamatli kiyimdagi malika qo'g'irchog'i. Yuqori sifatli materiallardan tayyorlangan. 3 yoshdan katta qizlar uchun.",
+        "isNew": true,
+        "isHit": true,
+        "discount": 18,
+        "dateAdded": "2025-12-14T10:00:00Z",
+        "soldCount": 85
+    },
+    {
+        "id": 3,
+        "title": "Yumshoq Ayiqcha 'Teddy'",
+        "brand": "SoftDream",
+        "price": 95000,
+        "category": "Yumshoq o'yinchoqlar",
+        "image": "https://i.postimg.cc/BZBQTX7F/bfv-KBrwyv-YBPym-S5z-Ce-Q1sf-PLp-Qkjy-Pn-ZEVUVxn2o6n-LUOm9IEFGb1-UA6-MAG.jpg",
+        "images": [
+            "https://i.postimg.cc/BZBQTX7F/bfv-KBrwyv-YBPym-S5z-Ce-Q1sf-PLp-Qkjy-Pn-ZEVUVxn2o6n-LUOm9IEFGb1-UA6-MAG.jpg",
+            "https://i.postimg.cc/BZBQTX7F/bfv-KBrwyv-YBPym-S5z-Ce-Q1sf-PLp-Qkjy-Pn-ZEVUVxn2o6n-LUOm9IEFGb1-UA6-MAG.jpg",
+            "https://i.postimg.cc/BZBQTX7F/bfv-KBrwyv-YBPym-S5z-Ce-Q1sf-PLp-Qkjy-Pn-ZEVUVxn2o6n-LUOm9IEFGb1-UA6-MAG.jpg",
+            "https://i.postimg.cc/BZBQTX7F/bfv-KBrwyv-YBPym-S5z-Ce-Q1sf-PLp-Qkjy-Pn-ZEVUVxn2o6n-LUOm9IEFGb1-UA6-MAG.jpg"
+        ],
+        "description": "Juda yumshoq va xavfsiz materialdan tikilgan katta ayiqcha. Bolalar uchun eng yaxshi do'st va sovg'a.",
+        "isNew": true,
+        "isHit": false,
+        "discount": 0,
+        "dateAdded": "2025-12-13T10:00:00Z",
+        "soldCount": 12
+    },
+    {
+        "id": 4,
+        "title": "RC Avtomobil - Ferrari",
+        "brand": "SpeedToys",
+        "price": 320000,
+        "originalPrice": 400000,
+        "category": "Mashinalar",
+        "image": "https://i.postimg.cc/CKG93fqL/images.jpg",
+        "images": [
+            "https://i.postimg.cc/CKG93fqL/images.jpg",
+            "https://i.postimg.cc/CKG93fqL/images.jpg",
+            "https://i.postimg.cc/CKG93fqL/images.jpg",
+            "https://i.postimg.cc/CKG93fqL/images.jpg"
+        ],
+        "description": "Tezkor boshqariladigan (RC) sport avtomobili. Masofadan boshqarish pulti va qayta zaryadlanuvchi batareya bilan birga keladi.",
+        "isNew": false,
+        "isHit": true,
+        "discount": 20,
+        "dateAdded": "2025-10-05T10:00:00Z",
+        "soldCount": 200
+    },
+    {
+        "id": 5,
+        "title": "Rasm Chizish Molberti",
+        "brand": "ArtKid",
+        "price": 210000,
+        "category": "Ta'limiy",
+        "image": "https://i.postimg.cc/CLrvfKw5/cke20rkvutv73otrk82g.jpg",
+        "images": [
+            "https://i.postimg.cc/CLrvfKw5/cke20rkvutv73otrk82g.jpg",
+            "https://i.postimg.cc/CLrvfKw5/cke20rkvutv73otrk82g.jpg",
+            "https://i.postimg.cc/CLrvfKw5/cke20rkvutv73otrk82g.jpg",
+            "https://i.postimg.cc/CLrvfKw5/cke20rkvutv73otrk82g.jpg"
+        ],
+        "description": "Ikki tomonlama yog'och molbert (marker va bo'r uchun). San'atni sevuvchi bolalar uchun ijodiy to'plam.",
+        "isNew": true,
+        "isHit": false,
+        "discount": 0,
+        "dateAdded": "2025-12-15T09:00:00Z",
+        "soldCount": 5
+    },
+    {
+        "id": 6,
+        "title": "Jumboq - Dunyo Xaritasi",
+        "brand": "PuzzleMasters",
+        "price": 115000,
+        "originalPrice": 150000,
+        "category": "Jumboqlar",
+        "image": "https://i.postimg.cc/ZqSMxKMC/world-map-jigsaw-puzzle.webp",
+        "images": [
+            "https://i.postimg.cc/ZqSMxKMC/world-map-jigsaw-puzzle.webp",
+            "https://i.postimg.cc/ZqSMxKMC/world-map-jigsaw-puzzle.webp",
+            "https://i.postimg.cc/ZqSMxKMC/world-map-jigsaw-puzzle.webp",
+            "https://i.postimg.cc/ZqSMxKMC/world-map-jigsaw-puzzle.webp"
+        ],
+        "description": "1000 qismdan iborat dunyo xaritasi jumboq. Mantiqiy fikrlash va sabr-toqatni oshiradi. 10 yoshdan katta oilalar uchun.",
+        "isNew": false,
+        "isHit": true,
+        "discount": 23,
+        "dateAdded": "2025-09-20T10:00:00Z",
+        "soldCount": 300
+    },
+    {
+        "id": 7,
+        "title": "Dinosaur figuralari to'plami",
+        "brand": "WildLife Toys",
+        "price": 140000,
+        "category": "Figuralar",
+        "image": "https://i.postimg.cc/V6SnSXWF/654e12d9595a37304e10c47d-lil-gen-realistic-dinosaurs-with.png",
+        "images": [
+            "https://i.postimg.cc/V6SnSXWF/654e12d9595a37304e10c47d-lil-gen-realistic-dinosaurs-with.png",
+            "https://i.postimg.cc/V6SnSXWF/654e12d9595a37304e10c47d-lil-gen-realistic-dinosaurs-with.png",
+            "https://i.postimg.cc/V6SnSXWF/654e12d9595a37304e10c47d-lil-gen-realistic-dinosaurs-with.png"
+        ],
+        "description": "12 xil dinozavr figuralaridan iborat to'plam. Xavfsiz, yumshoq plastmassadan yasalgan. 3 yoshdan boshlab tavsiya etiladi.",
+        "isNew": true,
+        "isHit": false,
+        "discount": 0,
+        "dateAdded": "2025-12-12T10:00:00Z",
+        "soldCount": 20
+    },
+    {
+        "id": 8,
+        "title": "Robot Konstruktor - Transformers",
+        "brand": "TechToys",
+        "price": 380000,
+        "originalPrice": 450000,
+        "category": "Konstruktor",
+        "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=400&h=400&fit=crop",
+        "images": [
+            "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=400&h=400&fit=crop",
+            "https://images.unsplash.com/photo-1587654780298-8bdbdc51a2a6?w=400&h=400&fit=crop",
+            "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=400&fit=crop",
+            "https://images.unsplash.com/photo-1594787319143-6088a9c70b5b?w=400&h=400&fit=crop"
+        ],
+        "description": "350 qismdan iborat robot konstruktori. Transformatsiya qilish mumkin. 8+ yosh bolalar uchun.",
+        "isNew": true,
+        "isHit": false,
+        "discount": 15,
+        "dateAdded": "2025-12-14T15:00:00Z",
+        "soldCount": 45
+    },
+    {
+        "id": 9,
+        "title": "Qo'g'irchoqlar uyi",
+        "brand": "DreamHouse",
+        "price": 275000,
+        "originalPrice": 320000,
+        "category": "Qo'g'irchoqlar",
+        "image": "https://lh5.googleusercontent.com/proxy/hKEd12N4rFFZhNCq8sqfYuK-SXZs2SGqffSFoSrVU-_jQ6BZFNvhCJBu9leny0loEmfjActyMcXDnspHkPHFHFnmcA32UAwGU6xYMw0RgXlWuS1hvMOOL_n_LRXlWnSamDC1X31EOk1YdBPyCpvoERHoWNFIDg3A6bA6fhg12ckBgC3m0ppnrA",
+        "images": [
+            "https://lh5.googleusercontent.com/proxy/hKEd12N4rFFZhNCq8sqfYuK-SXZs2SGqffSFoSrVU-_jQ6BZFNvhCJBu9leny0loEmfjActyMcXDnspHkPHFHFnmcA32UAwGU6xYMw0RgXlWuS1hvMOOL_n_LRXlWnSamDC1X31EOk1YdBPyCpvoERHoWNFIDg3A6bA6fhg12ckBgC3m0ppnrA",
+            "https://lh5.googleusercontent.com/proxy/hKEd12N4rFFZhNCq8sqfYuK-SXZs2SGqffSFoSrVU-_jQ6BZFNvhCJBu9leny0loEmfjActyMcXDnspHkPHFHFnmcA32UAwGU6xYMw0RgXlWuS1hvMOOL_n_LRXlWnSamDC1X31EOk1YdBPyCpvoERHoWNFIDg3A6bA6fhg12ckBgC3m0ppnrA",
+            "https://lh5.googleusercontent.com/proxy/hKEd12N4rFFZhNCq8sqfYuK-SXZs2SGqffSFoSrVU-_jQ6BZFNvhCJBu9leny0loEmfjActyMcXDnspHkPHFHFnmcA32UAwGU6xYMw0RgXlWuS1hvMOOL_n_LRXlWnSamDC1X31EOk1YdBPyCpvoERHoWNFIDg3A6bA6fhg12ckBgC3m0ppnrA",
+            "https://lh5.googleusercontent.com/proxy/hKEd12N4rFFZhNCq8sqfYuK-SXZs2SGqffSFoSrVU-_jQ6BZFNvhCJBu9leny0loEmfjActyMcXDnspHkPHFHFnmcA32UAwGU6xYMw0RgXlWuS1hvMOOL_n_LRXlWnSamDC1X31EOk1YdBPyCpvoERHoWNFIDg3A6bA6fhg12ckBgC3m0ppnrA"
+        ],
+        "description": "3 qavatli qo'g'irchoqlar uyi. 15 ta qismdan iborat. Realistik interyer va mebellar.",
+        "isNew": true,
+        "isHit": true,
+        "discount": 14,
+        "dateAdded": "2025-12-11T10:00:00Z",
+        "soldCount": 55
+    }
+]

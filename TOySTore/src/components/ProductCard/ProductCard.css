@@ -1,0 +1,238 @@
+/* =================================================================
+    MAHSULOT KARTALARI
+================================================================= */
+
+.product-card {
+    background: var(--panel);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+.product-title {
+    margin: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-brand {
+    margin: 0 15px 5px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.product-desc {
+    margin: 0 15px 10px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+.product-price {
+    margin: 0 15px 15px;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.product-card .btn-group {
+    display: flex;
+    gap: 8px;
+    margin: 0 15px 15px;
+}
+
+.product-card .btn-group .btn {
+    flex: 1;
+    font-size: 13px;
+    height: 38px;
+}
+
+/* BADGELAR */
+.hit-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #FF4D4D;
+    /* More vibrant red like screenshot */
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+}
+
+.new-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #10B981;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+/* If both Hit and New exist, offset one */
+.hit-badge+.new-badge {
+    top: 48px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #FFBB00;
+    /* Vibrant yellow like screenshot */
+    color: #222;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 800;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(255, 187, 0, 0.3);
+}
+
+.current-price {
+    color: #FF4D4D;
+    font-weight: 800;
+    font-size: 22px;
+    /* Bigger price as in screenshot */
+}
+
+.product-card .btn-group .btn {
+    flex: 1;
+    font-size: 14px;
+    height: 48px;
+    /* Taller buttons */
+    border-radius: 12px;
+}
+
+.product-card .btn--primary {
+    background: var(--brand);
+    /* Will be pinkish in current theme if I adjust it slightly later, or keep current */
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        padding: 10px !important;
+        border-radius: 20px;
+        height: auto !important;
+        /* Changed from 100% to auto */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-img {
+        height: 150px !important;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    .product-title {
+        font-size: 14px !important;
+        margin: 10px 0 !important;
+        height: 34px !important;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.2;
+        flex-grow: 1;
+    }
+
+    .product-price {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+        flex-shrink: 0;
+    }
+
+    .current-price {
+        font-size: 18px !important;
+        color: var(--brand-2);
+    }
+
+    .product-card .btn-group {
+        flex-direction: column;
+        gap: 8px;
+        margin: 0 0 5px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .product-card .btn-group .btn {
+        font-size: 13px;
+        height: 44px;
+        width: 100%;
+        border-radius: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-card .btn--primary {
+        background: var(--brand);
+        color: white;
+        box-shadow: 0 4px 12px rgba(251, 133, 0, 0.2);
+    }
+
+    .product-card .btn--secondary {
+        background: #fdf2e9;
+        border: 1px solid rgba(251, 133, 0, 0.2);
+        color: var(--brand);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        padding: 8px !important;
+    }
+
+    .product-img {
+        height: 130px !important;
+    }
+
+    .product-title {
+        font-size: 12px !important;
+    }
+
+    .product-card .btn-group .btn {
+        height: 40px;
+        font-size: 12px;
+    }
+}

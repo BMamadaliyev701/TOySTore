@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* Deeper pressed effect with shadow */
+  .btn-pressed {
+    @apply transition-all duration-300 active:scale-[0.88] shadow-md;
+  }
+
+  .btn-pressed:active {
+    box-shadow: inset 0 12px 24px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(4px);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/95 dark:bg-gray-900/95;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #cbd5e1;
+  /* Darker slate for contrast */
+  overflow-x: hidden;
+}
+
+.dark body {
+  background-color: #020617;
+}
+
+/* Tab bar improved visibility */
+.tab-bar {
+  background: rgba(255, 255, 255, 1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -10px 40px -10px rgba(0, 0, 0, 0.15);
+}
+
+.dark .tab-bar {
+  background: rgba(15, 23, 42, 1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 -10px 40px -10px rgba(0, 0, 0, 0.5);
+}
